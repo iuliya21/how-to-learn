@@ -10,10 +10,6 @@
   padding: 0;
 }
 
-.margin {
-  margin: 0;
-}
-
 /* Блок header */
 
 .header {
@@ -22,13 +18,8 @@
   max-height: 756px;
   display: flex;
   position: relative;
-  z-index: -3;
   align-items: center;
-}
-
-.background {
   background-color: #f2f2f2;
-  z-index: -2;
 }
 
 .logo {
@@ -49,6 +40,8 @@
   font-size: 102px;
   font-weight: 600;
   margin-left: 64px;
+  z-index: 3;
+  margin: 0;
 }
 
 .header__subtitle {
@@ -59,6 +52,8 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  z-index: 3;
+  margin: 0;
 }
 
 .header__link {
@@ -72,7 +67,7 @@
   right: 0;
   width: 765px;
   height: 608px;
-  z-index: -1;
+  z-index: 2;
 }
 
 .header__square-pic {
@@ -82,7 +77,7 @@
   height: 568px;
   top: 64px;
   right: 0;
-  z-index: -2;
+  z-index: 1;
 }
 
 /* Блок description */
@@ -106,6 +101,7 @@
   font-size: 18px;
   font-weight: normal;
   color: #2f80ed;
+  margin: 0;
 }
 
 .two-columns__main-text {
@@ -118,6 +114,10 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+}
+
+.two-columns__paragraph {
+  margin: 0;
 }
 
 .two-columns__span-accent {
@@ -143,6 +143,7 @@
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
+  margin: 0;
 }
 
 .section-subtitle {
@@ -151,6 +152,7 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+  margin: 0;
 }
 
 .table {
@@ -173,12 +175,14 @@
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
+  margin: 0;
 }
 
 .table__text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+  margin: 0;
 }
 
 /*Блок Feyman */
@@ -187,17 +191,19 @@
   padding-top: 100px;
   position: relative;
   height: 890px;
+  background-color: #f2f2f2;
+  background-image: url('/images/feynman.png');
+  background-repeat: no-repeat;
+  background-position: left bottom;
 }
 
 .feynman__title {
   width: 648px;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
-  z-index: 1;
 }
 
 .feynman__subtitle {
@@ -206,14 +212,7 @@
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-  z-index: 1;
-}
-
-.feynman__image {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
+  z-index: 2;
 }
 
 .feynman__link {
@@ -304,6 +303,7 @@
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
+  margin: 0;
  }
 
  .footer__column-link {
